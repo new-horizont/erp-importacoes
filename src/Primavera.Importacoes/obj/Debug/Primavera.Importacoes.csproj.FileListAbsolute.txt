@@ -1,0 +1,11 @@
+C:\Mahota\Source\CSharp\Por Apagar\pri-importacoes\src\Primavera.Importacoes\obj\Debug\Primavera.Importacoes.Properties.Resources.resources
+C:\Mahota\Source\CSharp\Por Apagar\pri-importacoes\src\Primavera.Importacoes\obj\Debug\Primavera.Importacoes.UI.FDU_ImportacaoArtigos.resources
+C:\Mahota\Source\CSharp\Por Apagar\pri-importacoes\src\Primavera.Importacoes\obj\Debug\Primavera.Importacoes.UI.FDU_ImportacaoFornecedores.resources
+C:\Mahota\Source\CSharp\Por Apagar\pri-importacoes\src\Primavera.Importacoes\obj\Debug\Primavera.Importacoes.UI.FDU_ImportacaoClientes.resources
+C:\Mahota\Source\CSharp\Por Apagar\pri-importacoes\src\Primavera.Importacoes\obj\Debug\Primavera.Importacoes.UI.FDU_ImportacaoFuncionarios.resources
+C:\Mahota\Source\CSharp\Por Apagar\pri-importacoes\src\Primavera.Importacoes\obj\Debug\Primavera.Importacoes.csproj.GenerateResource.cache
+C:\Mahota\Source\CSharp\Por Apagar\pri-importacoes\src\Primavera.Importacoes\obj\Debug\Primavera.Importacoes.csproj.CoreCompileInputs.cache
+C:\Mahota\Source\CSharp\Por Apagar\pri-importacoes\src\Primavera.Importacoes\bin\Debug\Primavera.Importacoes.dll
+C:\Mahota\Source\CSharp\Por Apagar\pri-importacoes\src\Primavera.Importacoes\bin\Debug\Primavera.Importacoes.pdb
+C:\Mahota\Source\CSharp\Por Apagar\pri-importacoes\src\Primavera.Importacoes\obj\Debug\Primavera.Importacoes.dll
+C:\Mahota\Source\CSharp\Por Apagar\pri-importacoes\src\Primavera.Importacoes\obj\Debug\Primavera.Importacoes.pdb
