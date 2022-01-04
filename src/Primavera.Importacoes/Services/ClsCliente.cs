@@ -9,61 +9,66 @@ using System.Threading.Tasks;
 
 namespace Primavera.Importacoes.Services
 {
-    public class ClsCliente : Geral
+    public class ClsPendente : Geral
     {
-        public ClsCliente(object BSO) : base(BSO)
+        public ClsPendente(object BSO) : base(BSO)
         {
 
         }
-        public ClsCliente(object BSO, object Plat) : base(BSO, Plat)
+        public ClsPendente(object BSO, object Plat) : base(BSO, Plat)
         {
 
         }
 
-        public ClsCliente(int tipoPlataforma, string strEmpresa, string strUtilizador, string strPassword)
+        public ClsPendente(int tipoPlataforma, string strEmpresa, string strUtilizador, string strPassword)
             : base(strUtilizador, strPassword, strEmpresa, tipoPlataforma)
         {
 
         }
 
-        public void Processar(DataView dt)
+        public void Processar(DataView dt, string tipoEntidade)
         {
             try
             {
                 string codigo;
+                double valor;
 
-                BasBECliente _cliente;
+                CctBE100.CctBEPendente _pendentes;
 
                 for (int i = 0; i < dt.Count; i++)
                 {
                     DataRowView dr = dt[i];
-                    codigo = StringHelper.DaString(dr["Codigo"]);
 
+                    codigo = StringHelper.DaString(dr["Entidade"]);
 
-                    if (codigo.Length > 0 && !bso.Base.Clientes.Existe(codigo))
-                    {
-                        string conta = StringHelper.DaString(dr["NIB/Conta"]);
-                        _cliente = new BasBECliente()
-                        {
-                            Cliente = codigo,
-                            Nome = StringHelper.DaString(dr["Nome"]),                            
-                            //DataAdmissao = Convert.ToDateTime(dr["DataAdmissao"]),                            
-                            //NumeroBI = Convert.ToString(dr["NumeroBI"]),
-                            //VencimentoMensal = Convert.ToDouble(dr["VencimentoBase"]),
-                            //Vencimento = Convert.ToDouble(dr["VencimentoBase"]),                            
-                            //Instrumento = "001",
-                            //Periodo = "P01",
-                            //Moeda = bso.Contexto.MoedaBase,
-                            //TipoProcessamento = 2,
-                            //TipoCalculoVencimento = 1,
-                            //TipoRendimento = "A",
-                            //TabIRPS = "TAB2014",
-                            //Estabelecimento = Convert.ToString(dr["CodEstabelecimento"]),
-                            //Situacao = Convert.ToString(dr["SituacaoProfissional"])
-                        };
+                    valor = StringHelper.DaDouble(dr["Pendentes"]);
 
-                        //bso.RecursosHumanos.Funcionarios.Actualiza(_funcionario);
-                    }
+                    _pendentes = new CctBE100.CctBEPendente();
+
+                    _pendentes.Tipodoc = tipoEntidade == "C"? "SAC":"SAF";
+                    _pendentes.DataDoc = DateTime.Now;
+
+                    _pendentes.TipoEntidade = tipoEntidade;
+                    _pendentes.Serie = bso.Base.Series.DaSerieDefeito("M", _pendentes.Tipodoc, _pendentes.DataDoc);
+                    _pendentes.Entidade = codigo;
+
+                    MotorERP().PagamentosRecebimentos.Pendentes.PreencheDadosRelacionados(_pendentes);
+
+                    _pendentes.DataDoc = DateTime.Now;
+                    _pendentes.DataVenc = DateTime.Now;
+                    _pendentes.DataIntroducao = DateTime.Now;
+                    _pendentes.CondPag = "1";
+                    _pendentes.Moeda = bso.Contexto.MoedaBase;
+                    _pendentes.ValorTotal = valor;
+                    _pendentes.ValorPendente = valor;
+                    _pendentes.ValorOrig = valor;
+                    //_pendentes.CambioMAlt = 0;
+                    _pendentes.Cambio = 1;
+                    _pendentes.CambioMBase = 1;
+                    _pendentes.TotalIva = 0;
+
+                    bso.PagamentosRecebimentos.Pendentes.Actualiza(_pendentes);
+
                 }
             }
             catch (Exception ex)

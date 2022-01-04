@@ -44,24 +44,30 @@ namespace Primavera.Importacoes.Services
                         _artigo = new BasBEArtigo()
                         {
                             Artigo = codigo,
-                            Descricao = StringHelper.DaString(dr["Descricao"]),                            
+                            Descricao = StringHelper.DaString(dr["Descricao"]),
+                            DescricaoComercial = StringHelper.DaString(dr["Descricao"]),
                             TipoArtigo = "3",
-                            UnidadeVenda = StringHelper.DaString(dr["UnidadeVenda"]),
+
+                            Familia = StringHelper.DaString(dr["Familia"]),
+                            SubFamilia = StringHelper.DaString(dr["SubFamilia"]),
+                            Marca = StringHelper.DaString(dr["Marca"]),
+
                             UnidadeBase = StringHelper.DaString(dr["UnidadeBase"]),
-                            IVA = StringHelper.DaString(dr["Iva"]),
-                            MovStock = StringHelper.DaString(dr["MovStock"]),
+                            UnidadeVenda = StringHelper.DaString(dr["UnidadeVenda"]),
                             UnidadeCompra = StringHelper.DaString(dr["UnidadeCompra"]),
                             UnidadeEntrada = StringHelper.DaString(dr["UnidadeEntrada"]),
                             UnidadeSaida = StringHelper.DaString(dr["UnidadeSaida"]),
+
+                            IVA = StringHelper.DaString(dr["Iva"]),
+                            PercIncidenciaIVA = 100,
+                            PercIvaDedutivel = 100,
                             SujeitoDevolucao = true,
-                            Anulado = false,
                             DeduzIVA = true,
-                            PercIncidenciaIVA =100,
-                            PercIvaDedutivel =100,
-                            Familia =  StringHelper.DaString(dr["Familia"]),
-                            SubFamilia = StringHelper.DaString(dr["SubFamilia"]),
+
+                            MovStock = StringHelper.DaString(dr["MovStock"]),
+
                             ArmazemSugestao = StringHelper.DaString(dr["ArmazemSugestao"]),
-                            LocalizacaoSugestao = StringHelper.DaString(dr["ArmazemSugestao"])
+                            LocalizacaoSugestao = StringHelper.DaString(dr["LocalizacaoSugestao"])
                         };
 
                         BasBEArtigoMoeda _moeda = new BasBEArtigoMoeda()

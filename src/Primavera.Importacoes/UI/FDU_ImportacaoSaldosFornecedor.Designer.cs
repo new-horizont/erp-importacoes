@@ -1,6 +1,6 @@
 ﻿namespace Primavera.Importacoes.UI
 {
-    partial class FDU_ImportacaoFornecedores
+    partial class FDU_ImportacaoSaldosFornecedor
     {
         /// <summary>
         /// Required designer variable.
@@ -89,7 +89,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 47F));
             this.tableLayoutPanel2.Controls.Add(this.label6, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.txtCaminhoExcel, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.btPesquisar, 2, 0);
@@ -122,7 +122,7 @@
             // btPesquisar
             // 
             this.btPesquisar.Image = global::Primavera.Importacoes.Properties.Resources.procurar;
-            this.btPesquisar.Location = new System.Drawing.Point(506, 3);
+            this.btPesquisar.Location = new System.Drawing.Point(505, 3);
             this.btPesquisar.Name = "btPesquisar";
             this.btPesquisar.Size = new System.Drawing.Size(30, 23);
             this.btPesquisar.TabIndex = 15;
@@ -158,7 +158,7 @@
             this.dgDados.Size = new System.Drawing.Size(845, 419);
             this.dgDados.TabIndex = 39;
             // 
-            // FDU_ImportacaoFornecedores
+            // FDU_ImportacaoSaldosFornecedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -166,10 +166,10 @@
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgDados);
-            this.Name = "FDU_ImportacaoFornecedores";
+            this.Name = "FDU_ImportacaoSaldosFornecedor";
             this.Size = new System.Drawing.Size(851, 529);
-            this.Text = "Importação Fornecedores";
-            this.Load += new System.EventHandler(this.FDU_ImportacaoFornecedores_Load);
+            this.Text = "Importacao Fornecedores";
+            this.Load += new System.EventHandler(this.FDU_ImportacaoClientes_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);

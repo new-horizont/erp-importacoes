@@ -35,12 +35,20 @@
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\Apl\BasBE100.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="CctBE100">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\Apl\CctBE100.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="ErpBS100">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\APL\ErpBS100.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="IBasBS100">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\Apl\IBasBS100.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ICctBS100">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\Apl\ICctBS100.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="IRhpBS100">
@@ -114,6 +122,7 @@
     </Compile>
     <Compile Include="Sales\UiEditorVendas.cs" />
     <Compile Include="Services\ClsArtigo.cs" />
+    <Compile Include="Services\ClsPendente.cs" />
     <Compile Include="Services\ClsCliente.cs" />
     <Compile Include="Services\ClsFornecedor.cs" />
     <Compile Include="Services\ClsFuncionario.cs" />
@@ -123,6 +132,18 @@
     </Compile>
     <Compile Include="UI\FDU_ImportacaoArtigos.Designer.cs">
       <DependentUpon>FDU_ImportacaoArtigos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FDU_ImportacaoSaldosFornecedor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\FDU_ImportacaoSaldosFornecedor.Designer.cs">
+      <DependentUpon>FDU_ImportacaoSaldosFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FDU_ImportacaoSaldosClientes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\FDU_ImportacaoSaldosClientes.Designer.cs">
+      <DependentUpon>FDU_ImportacaoSaldosClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\FDU_ImportacaoFornecedores.cs">
       <SubType>UserControl</SubType>
@@ -151,6 +172,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FDU_ImportacaoArtigos.resx">
       <DependentUpon>FDU_ImportacaoArtigos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FDU_ImportacaoSaldosFornecedor.resx">
+      <DependentUpon>FDU_ImportacaoSaldosFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FDU_ImportacaoSaldosClientes.resx">
+      <DependentUpon>FDU_ImportacaoSaldosClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FDU_ImportacaoFornecedores.resx">
       <DependentUpon>FDU_ImportacaoFornecedores.cs</DependentUpon>

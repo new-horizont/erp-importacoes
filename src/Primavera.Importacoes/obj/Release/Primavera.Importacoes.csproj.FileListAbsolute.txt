@@ -9,3 +9,5 @@ C:\Mahota\Source\CSharp\Por Apagar\pri-importacoes\src\Primavera.Importacoes\obj
 C:\Mahota\Source\CSharp\Por Apagar\pri-importacoes\src\Primavera.Importacoes\obj\Release\Primavera.Importacoes.csproj.CoreCompileInputs.cache
 C:\Mahota\Source\CSharp\Por Apagar\pri-importacoes\src\Primavera.Importacoes\obj\Release\Primavera.Importacoes.dll
 C:\Mahota\Source\CSharp\Por Apagar\pri-importacoes\src\Primavera.Importacoes\obj\Release\Primavera.Importacoes.pdb
+C:\Mahota\Source\CSharp\Por Apagar\pri-importacoes\src\Primavera.Importacoes\obj\Release\Primavera.Importacoes.UI.FDU_ImportacaoSaldosFornecedor.resources
+C:\Mahota\Source\CSharp\Por Apagar\pri-importacoes\src\Primavera.Importacoes\obj\Release\Primavera.Importacoes.UI.FDU_ImportacaoSaldosClientes.resources
