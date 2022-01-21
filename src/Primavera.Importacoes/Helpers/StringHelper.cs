@@ -51,12 +51,20 @@ namespace Primavera.Importacoes.Helpers
 
         public static Double DaDouble(object s)
         {
-            if (s is DBNull)
+            try
+            {
+                if (s is DBNull)
+                {
+                    return 0;
+                }
+                else
+                    return Convert.ToDouble(s);
+            }
+            catch(Exception ex)
             {
                 return 0;
             }
-            else
-                return Convert.ToDouble(s);
+            
         }
 
         public static float DaFloat(object s)

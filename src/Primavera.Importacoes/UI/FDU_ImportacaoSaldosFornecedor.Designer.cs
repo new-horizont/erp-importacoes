@@ -39,6 +39,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.cbSheet = new System.Windows.Forms.ComboBox();
             this.dgDados = new System.Windows.Forms.DataGridView();
+            this.txtDocumento = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -89,7 +91,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 47F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 48F));
             this.tableLayoutPanel2.Controls.Add(this.label6, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.txtCaminhoExcel, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.btPesquisar, 2, 0);
@@ -122,7 +124,7 @@
             // btPesquisar
             // 
             this.btPesquisar.Image = global::Primavera.Importacoes.Properties.Resources.procurar;
-            this.btPesquisar.Location = new System.Drawing.Point(505, 3);
+            this.btPesquisar.Location = new System.Drawing.Point(504, 3);
             this.btPesquisar.Name = "btPesquisar";
             this.btPesquisar.Size = new System.Drawing.Size(30, 23);
             this.btPesquisar.TabIndex = 15;
@@ -158,11 +160,29 @@
             this.dgDados.Size = new System.Drawing.Size(845, 419);
             this.dgDados.TabIndex = 39;
             // 
+            // txtDocumento
+            // 
+            this.txtDocumento.Location = new System.Drawing.Point(644, 75);
+            this.txtDocumento.Name = "txtDocumento";
+            this.txtDocumento.Size = new System.Drawing.Size(164, 20);
+            this.txtDocumento.TabIndex = 45;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(576, 77);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(62, 13);
+            this.label1.TabIndex = 44;
+            this.label1.Text = "Documento";
+            // 
             // FDU_ImportacaoSaldosFornecedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Controls.Add(this.txtDocumento);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgDados);
@@ -194,5 +214,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cbSheet;
         private System.Windows.Forms.DataGridView dgDados;
+        private System.Windows.Forms.TextBox txtDocumento;
+        private System.Windows.Forms.Label label1;
     }
 }

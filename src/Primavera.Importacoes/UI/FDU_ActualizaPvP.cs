@@ -11,10 +11,10 @@ using Primavera.Importacoes.Services;
 
 namespace Primavera.Importacoes.UI
 {
-    public partial class FDU_ImportacaoSaldosClientes : CustomForm
+    public partial class FDU_ActualizaPvp : CustomForm
     {
-        ClsPendente motor;
-        public FDU_ImportacaoSaldosClientes()
+        ClsActualizaPVP motor;
+        public FDU_ActualizaPvp()
         {
             InitializeComponent();
         }
@@ -23,7 +23,7 @@ namespace Primavera.Importacoes.UI
         {
             try
             {
-                motor = new ClsPendente(BSO, PSO);
+                motor = new ClsActualizaPVP(BSO, PSO);
             }
             catch (Exception ex)
             {
@@ -52,18 +52,17 @@ namespace Primavera.Importacoes.UI
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            string str_erros = "";
+            string str_erros = "",str_avisos = "";
+            string documento = "";
             try
             {
                 DataView dt = (DataView)dgDados.DataSource;
 
-                string doc = txtDocumento.Text;
-
-                motor.Processar(dt,doc,"C");
+                motor.ProcessaAlteracaoPVPs(dt,ref str_avisos, ref str_erros);
 
                 if (str_erros.Length > 0)
                 {
-                    motor.escreveLog(str_erros);
+                    throw new Exception(str_erros);
                 }
                 else
                 {

@@ -53,11 +53,13 @@ namespace Primavera.Importacoes.UI
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
             string str_erros = "";
+      
             try
             {
                 DataView dt = (DataView)dgDados.DataSource;
+                string doc = txtDocumento.Text;
 
-                motor.Processar(dt,"F");
+                motor.Processar(dt, doc,"F");
 
                 if (str_erros.Length > 0)
                 {

@@ -1,6 +1,6 @@
 ﻿namespace Primavera.Importacoes.UI
 {
-    partial class FDU_ImportacaoFuncionarios
+    partial class FDU_ActualizaPvp
     {
         /// <summary>
         /// Required designer variable.
@@ -52,8 +52,8 @@
             this.toolStripButton2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(800, 25);
-            this.toolStrip1.TabIndex = 0;
+            this.toolStrip1.Size = new System.Drawing.Size(851, 25);
+            this.toolStrip1.TabIndex = 37;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripButton1
@@ -77,10 +77,10 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.tableLayoutPanel2);
-            this.groupBox1.Location = new System.Drawing.Point(3, 28);
+            this.groupBox1.Location = new System.Drawing.Point(3, 27);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(562, 80);
-            this.groupBox1.TabIndex = 35;
+            this.groupBox1.TabIndex = 38;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ficheiro Excell";
             // 
@@ -89,7 +89,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 43F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel2.Controls.Add(this.label6, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.txtCaminhoExcel, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.btPesquisar, 2, 0);
@@ -114,7 +114,7 @@
             // 
             // txtCaminhoExcel
             // 
-            this.txtCaminhoExcel.Location = new System.Drawing.Point(119, 3);
+            this.txtCaminhoExcel.Location = new System.Drawing.Point(118, 3);
             this.txtCaminhoExcel.Name = "txtCaminhoExcel";
             this.txtCaminhoExcel.Size = new System.Drawing.Size(379, 20);
             this.txtCaminhoExcel.TabIndex = 10;
@@ -122,7 +122,7 @@
             // btPesquisar
             // 
             this.btPesquisar.Image = global::Primavera.Importacoes.Properties.Resources.procurar;
-            this.btPesquisar.Location = new System.Drawing.Point(509, 3);
+            this.btPesquisar.Location = new System.Drawing.Point(503, 3);
             this.btPesquisar.Name = "btPesquisar";
             this.btPesquisar.Size = new System.Drawing.Size(30, 23);
             this.btPesquisar.TabIndex = 15;
@@ -142,7 +142,7 @@
             // cbSheet
             // 
             this.cbSheet.FormattingEnabled = true;
-            this.cbSheet.Location = new System.Drawing.Point(119, 32);
+            this.cbSheet.Location = new System.Drawing.Point(118, 32);
             this.cbSheet.Name = "cbSheet";
             this.cbSheet.Size = new System.Drawing.Size(376, 21);
             this.cbSheet.TabIndex = 14;
@@ -153,23 +153,23 @@
             this.dgDados.AllowUserToOrderColumns = true;
             this.dgDados.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgDados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgDados.Location = new System.Drawing.Point(3, 108);
+            this.dgDados.Location = new System.Drawing.Point(3, 107);
             this.dgDados.Name = "dgDados";
-            this.dgDados.Size = new System.Drawing.Size(794, 663);
-            this.dgDados.TabIndex = 36;
+            this.dgDados.Size = new System.Drawing.Size(845, 419);
+            this.dgDados.TabIndex = 39;
             // 
-            // FDU_ImportacaoFuncionarios
+            // FDU_ActualizaPvp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Controls.Add(this.dgDados);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.toolStrip1);
-            this.Name = "FDU_ImportacaoFuncionarios";
-            this.Size = new System.Drawing.Size(800, 774);
-            this.Text = "FDU_ImportacaoFuncionarios";
-            this.Load += new System.EventHandler(this.FDU_ImportacaoFuncionarios_Load);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.dgDados);
+            this.Name = "FDU_ActualizaPvp";
+            this.Size = new System.Drawing.Size(851, 529);
+            this.Text = "Actualiza PVP";
+            this.Load += new System.EventHandler(this.FDU_ImportacaoClientes_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
