@@ -27,6 +27,33 @@ namespace Primavera.Importacoes.Services
 
         }
 
+        public void ActualizaCodigo(DataView dt)
+        {
+            try
+            {
+                string codigo;
+                string novoCodigo;
+                BasBECliente _cliente;
+
+                for (int i = 0; i < dt.Count; i++)
+                {
+                    DataRowView dr = dt[i];
+
+                    codigo = StringHelper.DaString(dr["Codigo"]);
+                    novoCodigo = StringHelper.DaString(dr["NovoCodigo"]);
+
+                    if (bso.Base.Clientes.Existe(codigo))
+                    {
+                        bso.Base.Clientes.AlteraCodigoCliente(codigo,novoCodigo);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public void Processar(DataView dt)
         {
             try
@@ -64,6 +91,7 @@ namespace Primavera.Importacoes.Services
                 throw ex;
             }
         }
+
     }
     
 }
