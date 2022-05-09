@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30621.155
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Primavera.Importacoes", "Primavera.Importacoes.csproj", "{DDA31A67-8999-4658-8F8A-C033731D65F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Primavera.Formularios.Rh", "..\Primavera.Formularios.Rh\Primavera.Formularios.Rh.csproj", "{A55DC522-88CB-4EC9-8200-620AE505A0D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{DDA31A67-8999-4658-8F8A-C033731D65F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDA31A67-8999-4658-8F8A-C033731D65F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDA31A67-8999-4658-8F8A-C033731D65F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A55DC522-88CB-4EC9-8200-620AE505A0D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A55DC522-88CB-4EC9-8200-620AE505A0D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A55DC522-88CB-4EC9-8200-620AE505A0D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A55DC522-88CB-4EC9-8200-620AE505A0D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
