@@ -71,6 +71,10 @@
       <HintPath>..\..\..\..\..\..\..\Program Files\PRIMAVERA\SG100\Apl\Primavera.Extensibility.BusinessEntities.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Primavera.Extensibility.CustomCode">
+      <HintPath>..\..\..\..\..\Program Files\PRIMAVERA\SG100\APL\Primavera.Extensibility.CustomCode.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Primavera.Extensibility.CustomForm">
       <HintPath>..\..\..\..\..\..\..\Program Files\PRIMAVERA\SG100\Apl\Primavera.Extensibility.CustomForm.dll</HintPath>
       <Private>False</Private>
@@ -182,6 +186,10 @@
     </Compile>
     <Compile Include="UI\FDU_ImportacaoFuncionarios.Designer.cs">
       <DependentUpon>FDU_ImportacaoFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FDU_ImportaMovCbl.cs" />
+    <Compile Include="UI\FDU_ImportaMovCbl.Designer.cs">
+      <DependentUpon>FDU_ImportaMovCbl.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />
