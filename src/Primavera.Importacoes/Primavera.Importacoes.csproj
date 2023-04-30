@@ -187,10 +187,6 @@
     <Compile Include="UI\FDU_ImportacaoFuncionarios.Designer.cs">
       <DependentUpon>FDU_ImportacaoFuncionarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\FDU_ImportaMovCbl.cs" />
-    <Compile Include="UI\FDU_ImportaMovCbl.Designer.cs">
-      <DependentUpon>FDU_ImportaMovCbl.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
